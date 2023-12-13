@@ -113,14 +113,6 @@ pub fn test_jubjub() {
 }
 #[wasm_bindgen]
 pub fn zkmain() -> i64 {
-    if true {
-        test_merkle();
-        test_jubjub();
-    }
-    if true {
-        super::witness::test_witness_obj();
-    }
-    let a = 0;
-    super::dbg!("abc{}\n", a);
+    test_jubjub();
     0
 }
